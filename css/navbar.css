@@ -1,0 +1,365 @@
+/*ALL NAVBAR STYLES*/
+
+
+
+.gradient-div {
+    width: 100%;
+    height: 70px; /* Ajustez la hauteur selon vos besoins */
+    background: linear-gradient(to bottom, #00000000, #000);
+    position: fixed;
+    bottom: 0;
+}
+  
+/* Mobile nav bar */
+@supports ( (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) ) {
+.mobile-nav {
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    z-index: 99;
+    text-align: center;
+    padding: 11px;
+    margin-bottom: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(42, 42, 42, 0.4);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    height: 53px;
+    border-top: solid 1px #4040404d;
+}
+}
+
+.bloc-icon {
+font-size: 26px;
+margin: 19px;
+color: var(--accent-color);
+}
+
+
+
+@media only screen and (min-width: 768px) {
+.mobile-nav {
+display: none;
+}
+}
+
+@media only screen and (max-device-width: 812px) {
+.bottom-tab-bar {
+padding-bottom: 25px;
+}
+}
+
+/* iPad nav bar */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    width: 200px;
+    /* background-color: #2c2c2c; */
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur(10px);
+    background-color: #2525257d;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  margin: 12px;
+}
+ 
+.sidebar a.active {
+  background-color: #404040;
+  color: white;
+  border-radius: 12px;
+  margin: 12px
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+  margin: 12px;
+  border-radius: 12px;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 0%;
+    height: 0;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.sidebar i {
+  margin-right: 10px; 
+  font-size: 18px; 
+  color: #ffffff; 
+}
+
+.bloc-icon i {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+
+/*install bar appinfos.html*/
+.getbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #1c1c1cbd;
+    border-radius: 20px 20px 0 0;
+    z-index: 99;
+    border: 1px solid #393939;
+    border-bottom: 0px;
+}
+.get {
+  background-color: var(--accent-color);
+  border-radius: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  border: 0;
+  font-size: 14px;
+  width: 74%;
+  height: 45px;
+}
+.getipa {
+  background-color: #1c1c1c69;
+  border-radius: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  border: 0;
+  font-size: 14px;
+  width: 22%;
+  height: 45px;
+  float: right;
+  border: solid 1px var(--accent-color);
+}
+.getipa.clicked {
+  animation: click 0.2s linear;
+}
+.get.clicked {
+  animation: click 0.2s linear;
+}
+
+.topNav {
+    background-color: #121312c4;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    color: white;
+    top: 0;
+    z-index: 99999999999999;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    border-bottom: solid 1px #4040404d;
+    padding-top: 32px;
+    padding-bottom: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+.topNav {
+  left: 200px;
+}
+.topNav div {
+  margin-right: 196px;
+  position: sticky;
+}
+}
+
+
+/*top nav bar title + back*/
+@media only screen and (min-width: 768px) {
+.toptitle {
+    background-color: #1212128a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin-left: 200px;
+}
+}
+
+
+.toptitle {
+    background-color: #1212128a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding-top: 20px;
+}
+.toptitle2 {
+    background-color: #1212128a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding-top: 20px;
+}
+/*SECTIONS CHOOSE*/
+.sectionscarr {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.sections {
+  background-color: #1c1c1c;
+  width: 100px;
+  height: 37px;
+  border-radius: 50px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  scroll-snap-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid rgb(37, 37, 39);
+}
+
+
+@media screen and (max-width: 768px) {
+  .sectionscarr {
+    flex-wrap: nowrap;
+  }
+  
+  .sections {
+    min-width: 100px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-110px);
+  }
+}
+
+#navbar {
+    overflow: hidden;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    padding-top: 17px;
+    height: 68px;
+}
+#navbar1 {
+    overflow: hidden;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    padding-top: 17px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-container {
+    position: relative;
+}
+
+.search-container i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #727272;
+}
+
+#myInput {
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    margin-bottom: 12px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border: 1px solid rgb(37, 37, 39);
+}
+
+/* Styles for iPhones with a pixel ratio of 3 (and higher) */
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  .mobile-nav {
+    padding-bottom: 62px;
+  }
+  .getbar button {
+    margin-bottom: 15px;
+  }
+  .toptitle {
+    padding-top: 50px;
+  }
+  .toptitle2 {
+    padding-top: 50px;
+  }
+  nav {
+    padding-top: 45px;
+  }
+  .topNav {
+    padding-top: 60px;
+  }
+}
+
+/* Styles for iPhones Xr and 11 */
+@media only screen  and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
+  .mobile-nav {
+    padding-bottom: 62px;
+  }
+  .getbar button {
+    margin-bottom: 15px;
+  }
+  .toptitle {
+    padding-top: 50px;
+  }
+  .toptitle2 {
+    padding-top: 50px;
+  }
+  nav {
+    padding-top: 45px;
+  }
+  .topNav {
+    padding-top: 60px;
+  }
+}
