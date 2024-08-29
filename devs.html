@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/featured.css" keep>
+    <link rel="stylesheet" href="css/navbar.css" keep>
+    <link rel="stylesheet" href="css/styles.css" keep>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#121212">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"content="initial-scale=1, viewport-fit=cover, user-scalable=no"/>	
+    <title>Debug</title>
+    <script src="/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/a5ae6c00ff.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+
+<div class="toptitle">	
+    <a style="text-decoration: none" href="index.html"><h1 style="font-family:helvetica;font-size:21px;margin-left: 16px;color: var(--accent-color);"><i class="fa-solid fa-angle-left" style="color: var(--accent-color);margin-right: 5px;"></i>Home</h1></a>
+    <h1 id="settings" style="font-family:helvetica;font-size:28px;color: #fff;margin-top: 0px;margin-left: 16px;margin-bottom: 10px;">Debug Menu</h1>
+</div>
+  
+  <div style="margin-top: 150px;" class="debug-menu">
+    <button onclick="setItemToLocalStorage()">Add to localStorage</button>
+    <button onclick="getItemFromLocalStorage()">Get from localStorage</button>
+    <button onclick="removeItemFromLocalStorage()">Delete from localStorage</button>
+    <button onclick="setCookie()">Add a cookie</button>
+    <button onclick="getCookie()">Get a cookie</button>
+    <button onclick="deleteCookie()">Delete a cookie</button>
+<br>
+ <br>
+<h3>Available keys :</h3>
+<ul>
+  <li>repoURLs</li>
+  <li>Card1</li>
+  <li>test-cookie</li>
+  <li>favapps</li>
+  <li>profilePic</li>
+  <li>username</li>
+</ul>
+  </div>
+	<br>
+	<br>
+	<br>
+    
+	
+<style>
+.debug-menu {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin: 10px;
+}
+</style>
+   <script>
+	   document.getElementById("clear-cookies-btn").addEventListener("click", function() {
+  var cookies = document.cookie.split(";");
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i];
+    var eqPos = cookie.indexOf("=");
+    var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT"; //supprime le cookie
+  }
+  alert("Les cookies ont été effacés."); //affiche un message de 
+
+
+
+   </script>
+
+<script>
+function setItemToLocalStorage() {
+  const key = prompt("Entrez la clé pour le localStorage :");
+  const value = prompt("Entrez la valeur :");
+  localStorage.setItem(key, value);
+}
+
+function getItemFromLocalStorage() {
+  const key = prompt("Entrez la clé à obtenir du localStorage :");
+  const value = localStorage.getItem(key);
+  alert(`The value of the key "${key}" is : ${value}`);
+}
+
+function removeItemFromLocalStorage() {
+  const key = prompt("Entrez la clé à supprimer du localStorage :");
+  localStorage.removeItem(key);
+  alert(`The key "${key}" has been deleted from localStorage.`);
+}
+
+function setCookie() {
+  const key = prompt("Entrez la clé pour le cookie :");
+  const value = prompt("Enter the value :");
+  document.cookie = `${key}=${value}`;
+}
+
+function getCookie() {
+  const key = prompt("Entrez la clé du cookie à obtenir :");
+  const cookies = document.cookie.split('; ');
+  for (const cookie of cookies) {
+    const [cookieKey, cookieValue] = cookie.split('=');
+    if (cookieKey === key) {
+      alert(`The value of the key "${key}" is : ${cookieValue}`);
+      return;
+    }
+  }
+  alert(`No cookies found for key "${key}"`);
+}
+
+function deleteCookie() {
+  const key = prompt("Enter the cookie key to delete :");
+  document.cookie = `${key}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+  alert(`The cookie "${key}" has been deleted`);
+}
+</script>
+<script>
+    // Fonction pour enregistrer la couleur dans localStorage
+    function setAccentColor(color) {
+      localStorage.setItem('accentColor', color);
+    }
+
+    // Fonction pour récupérer la couleur de localStorage
+    function getAccentColor() {
+      return localStorage.getItem('accentColor');
+    }
+
+    // Fonction pour appliquer la couleur à l'élément souhaité
+    function applyAccentColor() {
+      const accentColor = getAccentColor() || '#7163FF'; // Couleur de base si aucun enregistrement trouvé
+      document.documentElement.style.setProperty('--accent-color', accentColor);
+    }
+
+    // Réinitialiser la couleur à celle par défaut
+    function resetAccentColor() {
+      setAccentColor('#7163FF'); // Couleur de base
+      applyAccentColor();
+    }
+
+    // Écouteur d'événement pour le changement de couleur
+    const colorPicker = document.getElementById('color-picker');
+    colorPicker.addEventListener('change', function() {
+      const color = this.value;
+      setAccentColor(color);
+      applyAccentColor();
+    });
+
+    // Écouteur d'événement pour le bouton de réinitialisation
+    const resetButton = document.getElementById('reset-button');
+    resetButton.addEventListener('click', function() {
+      resetAccentColor();
+    });
+
+    // Appliquer la couleur lors du chargement de la page
+    applyAccentColor();
+  </script>
+
+</body>
+
+</html>

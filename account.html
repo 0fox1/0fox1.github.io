@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/featured.css" keep>
+    <link rel="stylesheet" href="css/navbar.css" keep>
+    <link rel="stylesheet" href="css/styles.css" keep>
+    <link rel="stylesheet" href="css/banner.css" keep>
+    <link rel="stylesheet" href="https://unpkg.com/@ivteplo/utilities.css@1.0.0/build/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  
+    <title>FoxxApps | Your Account</title>
+    <script src="https://kit.fontawesome.com/a5ae6c00ff.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#121212">
+    
+    <!-- PushAlert -->
+<script type="text/javascript">
+        (function(d, t) {
+                var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+                g.src = "https://cdn.pushalert.co/integrate_b015b95231e7957797fa474dd8bd99bd.js";
+                s.parentNode.insertBefore(g, s);
+        }(document, "script"));
+</script>
+<!-- End PushAlert -->
+    
+</head>
+<body style="opacity: 0;">
+	
+   
+                                                                                
+<div class="sidebar">
+  <a class="active" href="index.html">Home</a>
+  <a href="appsmanager.html">Apps Manager</a>
+	<a href="search.html">Search</a>
+</div>
+
+<div class="content">
+
+<div class="toptitle">	
+    <a style="text-decoration: none" href="javascript:history.back()"><h1 style="font-family: helvetica; font-size: 21px; margin-left: 16px;color: var(--accent-color);"><i class="fa-solid fa-angle-left" style="color: var(--accent-color); margin-right: 5px;"></i>Home</h1></a>
+    <h1 style="font-family:helvetica;font-size:28px;color: white;margin-top: 0px;margin-left: 16px;margin-bottom: 10px;">Your Profil</h1>
+</div>	
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+	
+<center>	
+    <img style="height: 100px;width: 100px;border-radius: 50px;margin-top: 38px;" id="displayProfilePic" src="" alt="Photo de Profil">
+    <p>Username: <span id="displayUsername"></span></p>
+    
+    <br>
+<ul class="ioslist">
+<li style="border-bottom-width: 0px;" onclick="window.location.href='favorite.html'">
+<div class="ioslist_icon"><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
+<span>Favorite Apps</span>
+<div class="ioslist_opposite"><i class="fa-solid fa-angle-right" aria-hidden="true"></i></div>
+</li>
+</ul>
+    <br>
+    <br>
+	
+<div id="clear-cookies-btn">
+<ul class="ioslist" style="background-color: #ff000070;">
+<li style="border-bottom-width: 0px;">
+<span>Log Out</span>
+<div class="ioslist_opposite"><i class="fas fa-times-circle" aria-hidden="true"></i></div>
+</li>
+</ul>
+</div>	
+</center>
+	
+
+<style>
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  z-index: 999;
+}
+
+nav h1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+nav h1 i a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-scrolled {
+  background-color: #1c1c1cbd;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);/* Couleur de fond lorsque l'utilisateur scroll */
+}
+/* Pour les écrans de PC/tablette */
+@media screen and (min-width: 768px) {
+  nav {
+   display: none;
+  }
+}
+
+  </style>
+	
+<div class="hidecolor">  
+<input type="color" id="color-picker">
+<button id="reset-button">Reset</button>
+</div>
+	    
+
+<script>
+    // Fonction pour enregistrer la couleur dans localStorage
+    function setAccentColor(color) {
+      localStorage.setItem('accentColor', color);
+    }
+
+    // Fonction pour récupérer la couleur de localStorage
+    function getAccentColor() {
+      return localStorage.getItem('accentColor');
+    }
+
+    // Fonction pour appliquer la couleur à l'élément souhaité
+    function applyAccentColor() {
+      const accentColor = getAccentColor() || '#7163FF'; // Couleur de base si aucun enregistrement trouvé
+      document.documentElement.style.setProperty('--accent-color', accentColor);
+    }
+
+    // Réinitialiser la couleur à celle par défaut
+    function resetAccentColor() {
+      setAccentColor('#7163FF'); // Couleur de base
+      applyAccentColor();
+    }
+
+    // Écouteur d'événement pour le changement de couleur
+    const colorPicker = document.getElementById('color-picker');
+    colorPicker.addEventListener('change', function() {
+      const color = this.value;
+      setAccentColor(color);
+      applyAccentColor();
+    });
+
+    // Écouteur d'événement pour le bouton de réinitialisation
+    const resetButton = document.getElementById('reset-button');
+    resetButton.addEventListener('click', function() {
+      resetAccentColor();
+    });
+
+    // Appliquer la couleur lors du chargement de la page
+    applyAccentColor();
+</script>	 
+  <script>
+
+window.addEventListener("scroll", function() {
+  var navbar = document.getElementById("navbar");
+  if (window.scrollY > 0) {
+    navbar.classList.add("navbar-scrolled");
+  } else {
+    navbar.classList.remove("navbar-scrolled");
+  }
+});
+        const displayUsername = document.getElementById('displayUsername');
+        const displayProfilePic = document.getElementById('displayProfilePic');
+
+        // Check if data is already stored in localStorage
+        const storedUsername = localStorage.getItem('username');
+        const storedProfilePicBase64 = localStorage.getItem('profilePic');
+        if (storedUsername && storedProfilePicBase64) {
+            displayUsername.textContent = storedUsername;
+            displayProfilePic.src = `data:image;base64,${storedProfilePicBase64}`;
+        } else {
+            window.location.href = 'setup.html'; // Redirect to setup page if no data
+        }
+	  
+//cokie/ LS delete	
+document.getElementById("clear-cookies-btn").addEventListener("click", function() {
+  // Supprimer tous les cookies
+  var cookies = document.cookie.split(";");
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i];
+    var eqPos = cookie.indexOf("=");
+    var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT"; // Supprime le cookie
+  }
+
+  localStorage.clear();
+
+  alert("The cache has been deleted.");
+
+  console.log("The cache has been deleted.");
+
+  window.location.href = "setup.html";
+});
+        document.addEventListener("DOMContentLoaded", function() {
+            // Récupérer l'élément avec la classe "toptitle"
+            var toptitleElement = document.querySelector(".toptitle");
+            var elementElement = document.getElementById("displayProfilePic");
+
+            // Vérifier si l'élément "toptitle" a un padding top de 43px
+            if (window.getComputedStyle(toptitleElement).paddingTop === "50px") {
+                // Si oui, changer le margin-top de l'élément "element" à 100px
+                elementElement.style.marginTop = "140px";
+            }
+        });
+</script>
+        <script src="js/index.js"></script>
+	      <script src="js/script.js"></script>
+        <script src="js/account.js"></script>
+        <script src="js/transition.js"></script>
+	      <script src="js/sheet.js"></script>
+
+</body>
+
+</html>
+  
+  
+  
+  

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/featured.css" keep>
+    <link rel="stylesheet" href="css/navbar.css" keep>
+    <link rel="stylesheet" href="css/styles.css" keep>
+    <link rel="stylesheet" href="css/banner.css" keep>
+    <link rel="stylesheet" href="https://unpkg.com/@ivteplo/utilities.css@1.0.0/build/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  
+    <title>setup.app</title>
+    <script src="https://kit.fontawesome.com/a5ae6c00ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7-icons@5/css/framework7-icons.min.css"></script>
+    <link rel="manifest" href="manifest.json">
+    
+    <link id="favicon" rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/Ibinou/-new-NoCodeHubInstaller/main/img/FD19EBF5-0177-462C-8C10-9C5B37766B29.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#121212">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- splashscreens by progressier.com -->
+<link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_15_Pro__iPhone_15__iPhone_14_Pro_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_11_Pro_Max__iPhone_XS_Max_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/iPhone_11__iPhone_XR_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/4__iPhone_SE__iPod_touch_5th_generation_and_later_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/12.9__iPad_Pro_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/11__iPad_Pro__10.5__iPad_Pro_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.9__iPad_Air_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.5__iPad_Air_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.2__iPad_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/8.3__iPad_Mini_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_15_Pro_Max__iPhone_15_Plus__iPhone_14_Pro_Max_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_15_Pro__iPhone_15__iPhone_14_Pro_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_11_Pro_Max__iPhone_XS_Max_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/iPhone_11__iPhone_XR_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/4__iPhone_SE__iPod_touch_5th_generation_and_later_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/12.9__iPad_Pro_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/11__iPad_Pro__10.5__iPad_Pro_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/10.9__iPad_Air_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/10.5__iPad_Air_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/10.2__iPad_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/8.3__iPad_Mini_portrait.png">
+    
+<!-- PushAlert -->
+<script type="text/javascript">
+        (function(d, t) {
+                var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+                g.src = "https://cdn.pushalert.co/integrate_8d0f3fb974f3c466c91728b39e7f2a4a.js";
+                s.parentNode.insertBefore(g, s);
+        }(document, "script"));
+</script>
+<!-- End PushAlert -->
+    
+</head>
+<body>
+<style>
+    body {
+        background-color: #1c0026;
+    }
+</style>
+<div id="UIContainer" class="UIContainer">
+  
+<div class="welcomeheader">
+<img class="welcomeimg" src="img/AppBox.png">
+</div>
+<h1 id="welcome">Welcome</h1>
+<h4 id="toitweakhub">To FoxxApps</h4>
+    <center>
+    <form id="accountForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="profilePic">Profile picture:</label>
+        <input type="file" accept="image/*" id="profilePic" name="profilePic" required>
+        </center>
+        <br>
+         <div class="bottom-choices">   
+             <button id="done" type="submit" class="login" onclick="window.location.href='setup/color.html';">Done</button>
+    </form>
+
+</div> 
+    
+</div>  
+  <div id="addPage" class="page">
+    <h1 id="installpls">Add FoxxApps to the homescreen</h1>
+    <div class="page-content">
+      <div class="block">
+        <div class="instruction-row">
+          <div class="icon-col">
+            <i class="f7-icons">compass</i>
+          </div>
+          <div class="instruction-col">
+            <p>Open this page in Safari</p>
+          </div>
+        </div>
+        <div class="instruction-row">
+          <div class="icon-col">
+            <i class="f7-icons">square_arrow_up</i>
+          </div>
+          <div class="instruction-col">
+            <p>Click the "Share" button</p>
+          </div>
+        </div>
+        <div class="instruction-row">
+          <div class="icon-col">
+            <i class="f7-icons">plus_square</i>
+          </div>
+          <div class="instruction-col">
+            <p>
+Choose “On Home Screen” from the options.</p>
+          </div>
+        </div>
+        <div class="instruction-row" style="margin-bottom: 0px;">
+          <div class="icon-col">
+            <i class="f7-icons">checkmark_alt_circle</i>
+          </div>
+          <div class="instruction-col">
+            <p>Tap "Add to Home Screen"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p id="choosepls">Default icons</p> 
+   <div class="icon-container" style="margin: 16px;">
+    <a id="Default"><img src="https://raw.githubusercontent.com/Ibinou/-new-NoCodeHubInstaller/main/img/FD19EBF5-0177-462C-8C10-9C5B37766B29.png" alt="Icon 5"></a>
+    <a id="DevIcon"><img src="https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/Dev%20icon.png" alt="Icon 1"></a>
+    <a id="PrideIcon"><img src="https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/1704646466.087501-46CA1109-7659-4782-B44D-C3C465C5D70F.png" alt="Icon 2"></a>
+    <a id="Winter"><img src="https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/1704646472.591928-6B901ADB-9CA8-470D-B9F6-21CFA4BC2579.png" alt="Icon 3"></a>
+    <a id="WWDC24"><img src="https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/1712177139.288906-569722D1-8CCB-4091-8C5E-5CD4C36C3200.png" alt="Icon 3"></a>
+  </div>   
+<p id="choosepls">Summer collection</p>
+   <div class="icon-container" style="margin: 16px;">
+    <a id="summer-blue"><img src="https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/summer-blue.jpg" alt="Icon 5"></a>
+    <a id="summer-pink"><img src="https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/summer-pink.jpg" alt="Icon 1"></a>
+    <a id="summer-green"><img src="https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/summer-green.jpg" alt="Icon 2"></a>
+  </div>  
+  </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem('setup') === 'done') {
+        window.location.href = 'index.html'; // Redirection vers index.html si la clé 'setup' est définie à 'done'
+    }
+});
+
+const accountForm = document.getElementById('accountForm');
+
+accountForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const usernameInput = document.getElementById('username');
+    const profilePicInput = document.getElementById('profilePic');
+    const username = usernameInput.value;
+
+    // Génération d'un UDID aléatoire de 6 chiffres
+    const randomUdid = Math.floor(100000 + Math.random() * 900000);
+
+    if (profilePicInput.files && profilePicInput.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            const profilePicBase64 = event.target.result.split(',')[1];
+
+            // Ajout des informations au local storage
+            localStorage.setItem('id', randomUdid);
+            localStorage.setItem('username', username);
+            localStorage.setItem('profilePic', profilePicBase64);
+
+            // Ajout de la date de création du compte
+            const setupDate = new Date().toISOString();
+            localStorage.setItem('setupDate', setupDate);
+            localStorage.setItem('setup', 'done'); // Définition de la clé 'setup' à 'done'
+
+            window.location.href = 'setup/color.html'; // Redirection vers la page d'accueil après l'enregistrement
+        };
+        reader.readAsDataURL(profilePicInput.files[0]);
+    } else {
+        alert('Please select a profile picture.');
+    }
+});
+
+if (!window.matchMedia('(display-mode: standalone)').matches) {
+    document.getElementById('addPage').style.display = 'block';
+    document.getElementById('UIContainer').style.display = 'none';
+}
+
+// change custom icon: system       
+function addBorderToImageWithSrc(src) {
+    var images = document.getElementsByTagName('img');
+    
+    for (var i = 0; i < images.length; i++) {
+        if (images[i].src === src) {
+            images[i].style.border = '4px solid #fff';
+        } else {
+            images[i].style.border = 'none';
+        }
+    }
+}
+
+// Set the 'Default' icon and apply the border by default
+var defaultIconSrc = 'https://raw.githubusercontent.com/Ibinou/-new-NoCodeHubInstaller/main/img/FD19EBF5-0177-462C-8C10-9C5B37766B29.png';
+document.getElementById('favicon').href = defaultIconSrc;
+addBorderToImageWithSrc(defaultIconSrc);
+
+document.getElementById('DevIcon').addEventListener('click', function() {
+    var faviconSrc = 'https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/Dev%20icon.png';
+    document.getElementById('favicon').href = faviconSrc;
+    addBorderToImageWithSrc(faviconSrc);
+});
+
+document.getElementById('Default').addEventListener('click', function() {
+    // 'Default' icon is already set, reapply the border
+    addBorderToImageWithSrc(defaultIconSrc);
+});
+
+document.getElementById('PrideIcon').addEventListener('click', function() {
+    var faviconSrc = 'https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/1704646466.087501-46CA1109-7659-4782-B44D-C3C465C5D70F.png';
+    document.getElementById('favicon').href = faviconSrc;
+    addBorderToImageWithSrc(faviconSrc);
+});
+
+document.getElementById('Winter').addEventListener('click', function() {
+    var faviconSrc = 'https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/1704646472.591928-6B901ADB-9CA8-470D-B9F6-21CFA4BC2579.png';
+    document.getElementById('favicon').href = faviconSrc;
+    addBorderToImageWithSrc(faviconSrc);
+});
+
+document.getElementById('WWDC24').addEventListener('click', function() {
+    var faviconSrc = 'https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/1712177139.288906-569722D1-8CCB-4091-8C5E-5CD4C36C3200.png';
+    document.getElementById('favicon').href = faviconSrc;
+    addBorderToImageWithSrc(faviconSrc);
+});
+
+document.getElementById('summer-blue').addEventListener('click', function() {
+    var faviconSrc = 'https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/summer-blue.jpg';
+    document.getElementById('favicon').href = faviconSrc;
+    addBorderToImageWithSrc(faviconSrc);
+});
+
+document.getElementById('summer-pink').addEventListener('click', function() {
+    var faviconSrc = 'https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/summer-pink.jpg';
+    document.getElementById('favicon').href = faviconSrc;
+    addBorderToImageWithSrc(faviconSrc);
+});
+
+document.getElementById('summer-green').addEventListener('click', function() {
+    var faviconSrc = 'https://raw.githubusercontent.com/Ibinou/iTweakHub/main/img/summer-green.jpg';
+    document.getElementById('favicon').href = faviconSrc;
+    addBorderToImageWithSrc(faviconSrc);
+});
+    </script>
+   
+<script src="js/account.js"></script>
+<script src="js/language.js"></script>
+</body>
+</html>
