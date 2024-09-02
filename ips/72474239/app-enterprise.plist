@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-<key>items</key>
-<array>
-<dict>
-<key>assets</key>
-<array>
-<dict>
-<key>kind</key>
-<string>software-package</string>
-<key>url</key>
-<string>https://api.cococloud-signing.online/files/enterprise/ipas/66d59c293f1fc/EeveeSpotify-4.8-8.9.66.ipa</string>
-</dict>
-<dict>
-<key>kind</key>
-<string>display-image</string>
-<key>url</key>
-<string>https://cdn.discordapp.com/attachments/1268355786925412495/1278786543720595466/588272B4-5343-4DEC-897C-93F2C7DA5935.jpg?ex=66d75846&is=66d606c6&hm=a428309e4db7912cb17c365b7a28070e92caec2a2351d2f11daa42eec9b9c2c9&</string>
-</dict>
-<dict>
-<key>kind</key>
-<string>full-size-image</string>
-<key>url</key>
-<string>https://cdn.discordapp.com/attachments/1268355786925412495/1278786543720595466/588272B4-5343-4DEC-897C-93F2C7DA5935.jpg?ex=66d75846&is=66d606c6&hm=a428309e4db7912cb17c365b7a28070e92caec2a2351d2f11daa42eec9b9c2c9&</string>
-</dict>
-</array>
-<key>metadata</key>
-<dict>
-                <key>bundle-identifier</key>
-                <string>com.admirsigns.302832</string>
-                <key>bundle-version</key>
-                <string>1.0</string>
-                <key>kind</key>
-                <string>software</string>
-                <key>title</key>
-                <string>Spotify - AdmirSigns</string>
-            </dict>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+        <dict>
+            <key>items</key>
+            <array>
+                <dict>
+                    <key>assets</key>
+                    <array>
+                        <dict>
+                            <key>kind</key>
+                            <string>software-package</string>
+                            <key>url</key>
+                            <string>https://maplesigner.ca/appsL/8oNZQW.ipa</string>
+                        </dict>
+                        <dict>
+                            <key>kind</key>
+                            <string>display-image</string>
+                            <key>needs-shine</key>
+                            <false/>
+                            <key>url</key>
+                            <string>https://github.com/0fox1/0fox1.github.io/blob/main/img/588272B4-5343-4DEC-897C-93F2C7DA5935.jpg?raw=true</string>
+                        </dict>
+                        <dict>
+                            <key>kind</key>
+                            <string>full-size-image</string>
+                            <key>needs-shine</key>
+                            <false/>
+                            <key>url</key>
+                            <string>https://github.com/0fox1/0fox1.github.io/blob/main/img/588272B4-5343-4DEC-897C-93F2C7DA5935.jpg?raw=true</string>
+                        </dict>
+                    </array>
+                    <key>metadata</key>
+                    <dict>
+                        <key>bundle-identifier</key>
+                        <string>com.spotify.client</string>
+                        <key>bundle-version</key>
+                        <string>1.0.1</string>
+                        <key>kind</key>
+                        <string>software</string>
+                        <key>title</key>
+                        <string>AdmirSigns - Spotify</string>
+                    </dict>
+                </dict>
+            </array>
         </dict>
-    </array>
-</dict>
-</plist>
+    </plist>
